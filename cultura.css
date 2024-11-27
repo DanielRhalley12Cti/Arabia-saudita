@@ -1,64 +1,5 @@
-/* Página Cultura */
-main h2 {
-    color: #006064;
-    font-size: 36px;
-    margin-top: 40px;
-  }
+
   
-  main p {
-    color: #555;
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-align: center;
-  }
-  
-  /* Cards (Cultura) */
-  .card-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 250px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-  }
-  
-  .card h3 {
-    color: #006064;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    color: #555;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Responsividade (Cultura) */
-  @media (max-width: 768px) {
-    .card-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .card {
-      width: 80%;
-      margin-bottom: 20px;
-    }
-  }
   body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -98,7 +39,76 @@ nav a:hover {
 }
 
 main {
-    flex-grow: 1; /* Isso faz com que o conteúdo principal expanda para ocupar o espaço disponível */
+    flex-grow: 1; 
+  }
+  
+main h2 {
+    color: #006064;
+    font-size: 36px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  main p {
+    color: #555;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  
+  .card h3 {
+    color: #006064;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
   }
   footer {
     background-color: #006064;
@@ -109,7 +119,7 @@ main {
     border-top: 5px solid #80deea;
     position: relative;
     width: 100%;
-    margin-top: auto; /* Isso vai garantir que o footer fique no final da página */
+    margin-top: auto; 
   }
   
   footer p {
@@ -125,4 +135,4 @@ main {
   footer a:hover {
     text-decoration: underline;
   }
-  
+    
